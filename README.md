@@ -29,7 +29,7 @@ Uses MFCC along with delta and delta-delta features to enhance speaker recogniti
 Persistence:
 Saves both the trained model and scaler to disk for future use.
 
-# 🔧 4. How It Works
+# 🔧 How It Works
 Step 1: User Enrollment
 Upload a voice sample of the user and a non-user.
 
@@ -39,7 +39,5 @@ Saves the model (voice_auth_model.pkl) and scaler (scaler.pkl).
 
 Step 2: Authentication
 Upload a test .wav voice sample.
-
 The system compares it with the enrolled model.
-
 Based on the predicted probability, it authenticates the speaker.
