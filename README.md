@@ -30,16 +30,16 @@ Uses MFCC along with delta and delta-delta features to enhance speaker recogniti
 Saves both the trained model and scaler to disk for future use.
 
 # 🔧 How It Works
-1: User Enrollment
-Upload a voice sample of the user and a non-user.
+1. User Enrollment
+- Upload a voice sample of the user and a non-user.
 
-The system extracts features and trains an SVM classifier.
+- The system extracts features and trains an SVM classifier.
 
-Saves the model (voice_auth_model.pkl) and scaler (scaler.pkl).
+- Saves the model (voice_auth_model.pkl) and scaler (scaler.pkl).
 
-2: Authentication
-Upload a test .wav voice sample.
+2. Authentication
+- Upload a test .wav voice sample.
 
-The system compares it with the enrolled model.
+- The system compares it with the enrolled model.
 
-Based on the predicted probability, it authenticates the speaker.
+- Based on the predicted probability, it authenticates the speaker.
