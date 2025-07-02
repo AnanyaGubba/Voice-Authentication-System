@@ -1,5 +1,9 @@
 # Voice-Authentication-System
-This project implements a simple voice authentication system which trains an SVM (Support Vector Machine) classifier to distinguish between a user's voice and others. The system supports user enrollment and voice-based authentication using .wav files.
+This project implements a basic voice-based authentication system leveraging machine learning techniques. It uses audio feature extraction (MFCC and its derivatives) to model and recognize a specific speaker’s voice. The system enables a user to enroll with their voice and then authenticate future voice inputs using a trained Support Vector Machine (SVM) classifier.
+
+The application is ideal for exploring the fundamentals of speaker recognition and machine learning-based audio processing.
+
+
 
 # 🧑‍💻 Tech Stack Used
 Programming Language: Python
@@ -30,16 +34,22 @@ Uses MFCC along with delta and delta-delta features to enhance speaker recogniti
 Saves both the trained model and scaler to disk for future use.
 
 # 🔧 How It Works
-1. User Enrollment
-- Upload a voice sample of the user and a non-user.
+1. User Enrollment:
 
-- The system extracts features and trains an SVM classifier.
+- The user uploads:
 
-- Saves the model (voice_auth_model.pkl) and scaler (scaler.pkl).
+  - Their own .wav voice sample
 
-2. Authentication
-- Upload a test .wav voice sample.
+  - A non-user .wav sample
 
-- The system compares it with the enrolled model.
+- MFCC + delta features are extracted from both.
 
-- Based on the predicted probability, it authenticates the speaker.
+- A binary SVM classifier is trained and saved.
+
+2. Authentication:
+
+- The user uploads a new .wav sample.
+
+- The model extracts features and predicts whether it matches the enrolled user.
+
+- Authentication success/failure is reported based on probability threshold.
