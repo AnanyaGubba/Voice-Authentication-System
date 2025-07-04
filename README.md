@@ -1,4 +1,7 @@
 # Voice-Authentication-System
+
+# 📌 1. Project Description
+
 This project implements a basic voice-based authentication system leveraging machine learning techniques. It uses audio feature extraction (MFCC and its derivatives) to model and recognize a specific speaker’s voice. The system enables a user to enroll with their voice and then authenticate future voice inputs using a trained Support Vector Machine (SVM) classifier.
 
 The application is ideal for exploring the fundamentals of speaker recognition and machine learning-based audio processing.
