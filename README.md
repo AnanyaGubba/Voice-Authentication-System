@@ -8,7 +8,7 @@ The application is ideal for exploring the fundamentals of speaker recognition a
 
 
 
-# 🧑‍💻 Tech Stack Used
+# 🧑‍💻 2. Tech Stack Used
 Programming Language: Python
 
 Libraries:
@@ -23,7 +23,7 @@ Libraries:
 
 5. Google Colab – for easy file uploads and execution
 
-# 🚀 Features
+# 🚀 3. Features
 - User Enrollment:
 Uploads two .wav files (user and non-user), extracts features, and trains an SVM model.
 
@@ -36,7 +36,7 @@ Uses MFCC along with delta and delta-delta features to enhance speaker recogniti
 - Persistence:
 Saves both the trained model and scaler to disk for future use.
 
-# 🔧 How It Works
+# 🔧 4. How It Works
 1. User Enrollment:
 
 - The user uploads:
